@@ -10,6 +10,28 @@
 </head>
 
 <body>
+    <div class="card">
+        <form onsubmit="validateForm(); return false">
+            <div>
+                <label id="nameTxt" for="name">Name</label>
+                <input name="name" id="nameInput" type="text">
+            </div>
+            <div>
+                <label id="ageTxt" for="Age">Age</label>
+                <input name="age" id="ageInput" type="number">
+            </div>
+            <div>
+                <label id="idTxt" for="ID">ID</label>
+                <input name="id" id="idInput" type="tel">
+            </div>
+            <div>
+                <label id="emailTxt" for="Email">Email</label>
+                <input name="email" id="emailInput" type="email">
+            </div>
+            <h4></h4>
+            <input class="button" type="submit" value="submit">
+        </form>
+    </div>
     <script src="script/script.js"></script>
 </body>
 

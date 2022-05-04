@@ -6,57 +6,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
-    <title>Document</title>
+    <title>banet dot com</title>
 </head>
 
 <body>
-    <div class="center">
-        <h2 class="promptHeader">Please input Student Name and Grade.</h2>
-        <div>
-            <input class="inputField" id="nameInput" type="text" placeholder="Name">
-            <input class="inputField" id="gradeInput" type="number" placeholder="Grade">
-        </div>
-        <button class="saveBtn" onclick="saveToTable()">Save input</button>
-        <div class="missingContainer">
-            <h3 id="missing"></h3>
-        </div>
-        <div class="smallTables">
-            <table class="smallTable">
-                <thead>
-                    <tr>
-                        <td><label>Student Count</label></td>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><label id="stdCnt">0</label></td>
-                    </tr>
-                </tbody>
-            </table>
-            <table class="smallTable">
-                <thead>
-                    <tr>
-                        <td><label>Grades Average</label></td>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><label id="grdAvg">0</label></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <table class="bigTable">
-            <thead>
-                <tr>
-                    <td><Label>Name</Label></td>
-                    <td><label>Grade</label></td>
-                </tr>
-            </thead>
-            <tbody id="tableBody">
-            </tbody>
-        </table>
+    <!-- Questions 1 and 2 -->
+    <div class="container">
+        <form onsubmit="return false;">
+            <h3>Question 1</h3>
+            <div class="inputCol">
+                <label>Email:</label>
+                <input type="email" id="emailInput" placeholder="jon@example.com" required>
+            </div>
+            <div class="btn">
+                <input type="submit" class="saveBtn" id="email" value="Save">
+                <input type="button" class="loadBtn" id="email" value="Load">
+            </div>
+        </form>
+        <form onsubmit="return false;">
+            <h3>Question 2</h3>
+            <div class="inputCol">
+                <label>Phone:</label>
+                <input type="tel" id="phoneInput" placeholder="05x-xxxxxxx" required>
+            </div>
+            <div class="btn">
+
+                <input type="submit" class="saveBtn" id="phone" value="Save">
+                <input type="button" class="loadBtn" id="phone" value="Load">
+            </div>
+        </form>
     </div>
+
+    <!-- Question 3 -->
+    <div class="container">
+        <h3>Question 3</h3>
+        <form onsubmit="return false;">
+            <div class="inputCol">
+                <label>Name:</label>
+                <input type="text" id="lNameInput" placeholder="jon doe" required>
+            </div>
+            <div class="inputCol">
+                <label>Phone:</label>
+                <input type="tel" id="lPhoneInput" placeholder="05x-xxxxxxx" required>
+            </div>
+            <div class="inputCol">
+                <label>Email:</label>
+                <input type="email" id="lEmailInput" placeholder="jon@example.com" required>
+            </div>
+            <div class="btn">
+                <input type="submit" class="localSaveBtn" id="LocalSave" value="Save">
+            </div>
+        </form>
+    </div>
+
+    <!-- Bounty Question -->
+    <div class="container">
+        <h3>Bounty Question</h3>
+        <form onsubmit="return false;">
+            <div class="inputCol">
+                <label>Search:</label>
+                <input type="text" id="searchInput" required>
+            </div>
+            <div class="btn">
+                <input type="submit" class="searchSaveBtn" id="searchSave" value="Save">
+                <input type="submit" class="searchBtn" id="search" value="Search">
+            </div>
+        </form>
+    </div>
+
+
     <script src="script/script.js"></script>
 </body>
 

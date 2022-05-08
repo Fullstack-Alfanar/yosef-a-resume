@@ -1,14 +1,21 @@
 
+// used the bubble algorithm
 function sortArray(arr) {
-    let sortedArr = []; // the sorted array
+    let temp;
+    for (let i = 0; i < arr.length - 1; i++) {
+        for (let j = 0; j < arr.length - i - 1; j++) {
+            if (arr[j] > arr[j + 1]) {
+                temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
 
-    for (let i = 1; i < arr.length; i++) {
-        sortedArr.splice(2, 0, arr[i]);
+            }
+        }
     }
-
-    return sortedArr;
+    return arr;
 }
 
 let arr = [10, 4, 30, 13, 9, 17, 2, 24, 11, 23, 5, 7];
 
 console.log(sortArray(arr));
+

@@ -1,5 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 .rulesList,
 form {
     display: flex;
     flex-direction: column;
+}
+
+body {
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    padding: 2rem;
+    background: wheat;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px grey;
+
+    * {
+        margin-top: 5px;
+    }
 }

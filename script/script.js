@@ -1,5 +1,4 @@
 
-
 let inp = document.getElementById("passwordInput");
 inp.addEventListener("input", e => {
     // test 1
@@ -92,3 +91,4 @@ function onlyEnglish(str) {
     }
     return true;
 }
+

@@ -1,21 +1,29 @@
 
-// used the bubble algorithm
+// used the count algorithm
 function sortArray(arr) {
-    let temp;
-    for (let i = 0; i < arr.length - 1; i++) {
-        for (let j = 0; j < arr.length - i - 1; j++) {
-            if (arr[j] > arr[j + 1]) {
-                temp = arr[j];
-                arr[j] = arr[j + 1];
-                arr[j + 1] = temp;
+    let temp = new Array(Math.max(...arr));
 
-            }
+    for (let i = 0; i < arr.length; i++) {
+        if (temp[arr[i]] != NaN && temp[arr[i]] != undefined) {
+            temp[arr[i]] += 1;
+        }
+        else {
+            temp[arr[i]] = 0;
+            temp[arr[i]] += 1;
         }
     }
-    return arr;
+    let sortedArray = [];
+    for (let i = 0; i < temp.length; i++) {
+        if (temp[i] != undefined)
+            sortedArray.push(i);
+    }
+    return sortedArray;
 }
 
 let arr = [10, 4, 30, 13, 9, 17, 2, 24, 11, 23, 5, 7];
+let arr2 = [10, 4, 30, 1728, 9, 17, 2, 24, 11, 23, 5, 7];
 
 console.log(sortArray(arr));
+console.log(sortArray(arr2));
+
 

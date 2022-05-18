@@ -8,6 +8,7 @@ body {
 }
 
 .card {
+
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -31,5 +32,6 @@ body {
 
 .card #error {
   color: red;
+
 }
 /*# sourceMappingURL=style.css.map */

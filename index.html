@@ -5,61 +5,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style/style.css">
     <title>banet dot com</title>
 </head>
 
 <body>
-
     <div class="card">
+        <table>
 
-        <form onsubmit="testPassword() ;return false;">
-            <input type="text" id="nameInput">
-            <input type="password" id="passwordInput">
-            <input type="submit" id="submitBtn" value="Submit">
-        </form>
-
+            <tr>
+                <td>
+                    <label>First Number: </label>
+                </td>
+                <td>
+                    <input id="firstNumIn" type="number">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Second Number: </label>
+                </td>
+                <td>
+                    <input id="secondNumIn" type="number">
+                </td>
+            </tr>
+        </table>
+        <label id="error"></label>
         <div>
-            <h3>Password must contain the following:</h3>
-            <div class="rulesList">
-                <div id="test1">
-                    <i class="bi bi-dot"></i>
-                    <label>Password must be longer than 8 characters.</label>
-                </div>
-                <div id="test2">
-                    <i class="bi bi-dot"></i>
-                    <label>Password must contain large letters.</label>
-                </div>
-                <div id="test3">
-                    <i class="bi bi-dot"></i>
-                    <label>Password must contain small letters.</label>
-                </div>
-                <div id="test4">
-                    <i class="bi bi-dot"></i>
-                    <label>Password must contain special characters.</label>
-                </div>
-                <div id="test5">
-                    <i class="bi bi-dot"></i>
-                    <label>Password must not contain three numbers in a row.</label>
-                </div>
-                <div id="test6">
-                    <i class="bi bi-dot"></i>
-                    <label>Password must contain only letters in english.</h4>
-                </div>
-            </div>
+            <button id="fillBtn">Fill List</button>
+            <select id="dropDown"></select>
         </div>
     </div>
-
+    <script src="script/jquery-3.6.0.js"></script>
     <script src="script/script.js"></script>
+
 </body>
 
 </html>
-
-<!-- <i class="bi bi-check"></i> -->
-<!-- <i class="bi bi-x"></i> -->
-
-<!-- extras -->
-<!-- <i class="bi bi-patch-exclamation-fill"></i> -->
-<!-- <i class="bi bi-patch-check-fill"></i> -->
-<!-- <i class="bi bi-exclamation"></i> -->
